@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <div className="h-[100svh] bg-[#1E1E1E] text-[#FFFFFF] pr-5 pl-5">
       <h1 className="text-center text-[26px] font-semibold pt-6 pb-6 sm:pt-[10svh] sm:text-[30px] sm:h-[15svh]">More on What I Do.</h1>
-      <div className="container sm:flex sm:flex-col sm:items-center sm:justify-center sm:h-[85svh]">
+      <div className="sm:flex sm:flex-col sm:items-center sm:justify-center sm:h-[85svh]">
         <div className="sm:flex sm:flex-row-reverse sm:w-[60svw] sm:mb-4">
           <div className="sm:border-t-[1px] sm:border-l-[1px]">
             <div className='h-[40svh] sm:h-[50svh] sm:ml-5 sm:mt-5'>
