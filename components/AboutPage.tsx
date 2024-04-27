@@ -16,12 +16,12 @@ const AboutPage = () => {
           </div>
           
           <div className="sm:pr-10 sm:w-[30svw]">
-            <h2 className="text-[36px] 2xl:text-[48px] 2xl:mt-5 pt-4 pb-2 font-medium">Develop</h2>
-            <p className="text-[14px] 2xl:text-[24px] font-semibold leading-tight pr-5 sm:pr-0 sm:max-w-[25svw]">I design both front-end and back-end websites. With the skills I have accumulated over more than 6 years of my software engineering journey, I build seamless applications.</p>
-            <p className="text-[14px] 2xl:text-[24px] font-semibold leading-tight pt-4 pr-5 sm:pr-0 sm:max-w-[25svw]">I expertise in node alongside modern frameworks like react, next and express. Check below whether I am fit for your work or not.</p>
+            <h2 className="text-[36px] 2xl:text-[44px] 2xl:mt-5 pt-4 pb-2 font-medium">Develop</h2>
+            <p className="text-[14px] 2xl:text-[20px] font-semibold leading-tight pr-5 sm:pr-0 sm:max-w-[25svw]">I design both front-end and back-end websites. With the skills I have accumulated over more than 6 years of my software engineering journey, I build seamless applications.</p>
+            <p className="text-[14px] 2xl:text-[20px] font-semibold leading-tight pt-4 pr-5 sm:pr-0 sm:max-w-[25svw] 2xl:max-w-[28svw]">I expertise in node alongside modern frameworks like react, next and express. Check below whether I am fit for your work or not.</p>
           </div>
         </div>
-        <div className="flex text-[24px] pt-4 2xl:text-[40px] 2xl:pt-8">
+        <div className="flex text-[24px] pt-4 2xl:text-[32px] 2xl:pt-8">
           <FaReact className="mr-5 text-[#61DBFB]"/>
           <SiExpress className="mr-5"/>
           <SiNextdotjs className="mr-5"/>

@@ -25,9 +25,9 @@ const WorkCard: React.FC<CardProps> = ({pictureSource, title, introduction, conc
         </div>
       </div>
       <h2 className="text-[20px] 2xl:text-[32px] pt-4 pb-2 font-bold"><Link href={link} target="_blank" className="text-[#0C8CE9]">{title}</Link></h2>
-      <p className="text-[14px] 2xl:text-[24px] font-normal leading-tight pr-5 2xl:max-w-[25svw]">{introduction}</p>
-      <p className="text-[14px] 2xl:text-[24px] font-normal leading-tight pr-5 pt-4 2xl:max-w-[25svw]">{conclusion}</p>
-      <div className="text-[24px] 2xl:text-[32px] pt-4 pb-8 sm:pb-0">
+      <p className="text-[14px] 2xl:text-[20px] font-normal leading-tight pr-5 2xl:max-w-[30svw]">{introduction}</p>
+      <p className="text-[14px] 2xl:text-[20px] font-normal leading-tight pr-5 pt-4 2xl:max-w-[30svw]">{conclusion}</p>
+      <div className="text-[24px] 2xl:text-[30px] pt-4 pb-8 sm:pb-0">
         {stack}
       </div>
     </div>
