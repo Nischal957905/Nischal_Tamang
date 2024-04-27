@@ -44,9 +44,9 @@ const HomePage = () => {
       }
       {/*Desktop Navigation*/}
       <div className='menu-section sm:flex p-5 hidden'>
-          <div className='text-[24px] font-bold'><Link href='/'>tamangNischal</Link></div>
+          <div className='text-[24px] font-bold 2xl:text-[32px]'><Link href='/'>tamangNischal</Link></div>
           <div className='ml-auto'>
-            <RiMenu2Fill className='text-[24px] font-bold'/> 
+            <RiMenu2Fill className='text-[24px] font-bold 2xl:text-[32px]'/> 
       </div>
 
       </div>
@@ -60,16 +60,16 @@ const HomePage = () => {
           </div>
           <div className="con-divs sm:pr-10">
             <div className='pt-8'>
-              <p className='text-[16px] sm:text-[20px] font-bold tracking-tight'>I am</p>
-              <p className='text-[36px] sm:text-[40px] font-bold tracking-tight leading-none'>Tamang.</p>
-              <p className='text-[36px] sm:text-[40px] font-bold tracking-tight leading-none'>Nischal</p>
+              <p className='text-[16px] sm:text-[20px] 2xl:text-[30px] font-bold tracking-tight'>I am</p>
+              <p className='text-[36px] sm:text-[40px] 2xl:text-[60px] font-bold tracking-tight leading-none'>Tamang.</p>
+              <p className='text-[36px] sm:text-[40px] 2xl:text-[60px] font-bold tracking-tight leading-none'>Nischal</p>
             </div>
-            <h2 className='text-[16px] sm:text-[20px] font-bold tracking-tighter pt-4 pb-1'>Software <Link href='https://github.com/Nischal957905' target='_blank' className='text-[#0C8CE9]'>Engineer</Link> & UI <Link href='https://www.linkedin.com/in/nischal-tamang-072058240/' target='_blank' className='text-[#0C8CE9]'>Designer</Link></h2>
-            <div className='text-[14px] font-normal leading-tight'>
+            <h2 className='text-[16px] sm:text-[20px] 2xl:text-[30px] font-bold tracking-tighter pt-4 pb-1'>Software <Link href='https://github.com/Nischal957905' target='_blank' className='text-[#0C8CE9]'>Engineer</Link> & UI <Link href='https://www.linkedin.com/in/nischal-tamang-072058240/' target='_blank' className='text-[#0C8CE9]'>Designer</Link></h2>
+            <div className='text-[14px] 2xl:text-[21px] font-normal leading-tight'>
               <p>I am a professional software</p>
               <p>engineer as well as a UI designer</p>
             </div>
-            <Link href='https://github.com/Nischal957905' target='_blank'><BsGithub className='text-[24px] mt-4' /></Link>
+            <Link href='https://github.com/Nischal957905' target='_blank'><BsGithub className='text-[24px] 2xl:text-[36px] mt-4' /></Link>
           </div>
         </div>
       </div>

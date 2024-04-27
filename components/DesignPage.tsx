@@ -33,8 +33,8 @@ const DesignPage = () => {
 
   return (
     <div className="bg-[#1E1E1E] text-[#FFFFFF] pr-5 pl-5 sm:h-[100svh]">
-      <h1 className="text-center text-[26px] font-semibold pt-6 pb-6 sm:pt-0 sm:pb-0 sm:flex sm:items-center sm:justify-center sm:h-[17svh]">Some of My Designs</h1>
-      <div className='sm:flex sm:justify-center sm:items-center sm:h-[83svh] sm:flex-col'>
+      <h1 className="text-center text-[26px] font-semibold pt-6 pb-6 sm:pt-0 sm:pb-0 sm:flex sm:items-center sm:justify-center sm:h-[17svh] 2xl:text-[48px]">Some of My Designs</h1>
+      <div className='sm:flex sm:justify-center sm:items-center 2xl:justify-start sm:h-[83svh] sm:flex-col'>
         <div className='sm:grid sm:grid-cols-2 sm:w-[60svw] sm:border-t-[1px]'>
           <div className='sm:border-r-[1px] sm:pt-5 sm:pr-5'>
             <WorkCard pictureSource={designData[0].image} title={designData[0].title} introduction={designData[0].intro} conclusion={designData[0].outro} stack={<FigmaIcon/>} link={designData[0].link} purpose={false}/>
@@ -43,7 +43,7 @@ const DesignPage = () => {
             <WorkCard pictureSource={designData[1].image} title={designData[1].title} introduction={designData[1].intro} conclusion={designData[1].outro} stack={<FigmaIcon/>} link={designData[1].link} purpose={false}/>
           </div>
         </div>
-        <div className='text-end pb-5 sm:w-full sm:pt-5'><Link href='https://github.com/Nischal957905' target='_blank' className='text-[#0C8CE9]'>|More on Figma|</Link></div>
+        <div className='text-end pb-5 sm:w-full sm:pt-5'><Link href='https://github.com/Nischal957905' target='_blank' className='text-[#0C8CE9]  2xl:text-[20px]'>|More on Figma|</Link></div>
       </div>
     </div>
   )
