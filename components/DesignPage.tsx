@@ -16,11 +16,11 @@ const DesignPage = () => {
 
   const designData = [
     {
-      image: '/assets/images/fig1.webp',
+      image: '/assets/images/fig1.png',
       title: 'Portfolio Web UI ',
-      intro: 'Fully responsive and highly attractive design for the website of the client.',
+      intro: 'Fully responsive and highly attractive design for the website project.',
       outro: 'Personal portfolio design elevating user experience and relaying user skills up to the point. Tools like Figma, Canva, Adobe and others have been used.',
-      link:'https://www.figma.com/file/oBgG7QhrPzR0NVqSW2TqsO/Portfolio?type=design&node-id=0%3A1&mode=design&t=OkGRUzKQ8ouS8qxB-1'
+      link:'https://www.figma.com/design/a4l4ZzEtPWG4LT46YCC9va/Artist--Portfolio?node-id=0-1&p=f&t=vKnC2MIttCzFroV6-0'
     },
     {
       image: '/assets/images/fig2.webp',
