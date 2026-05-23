@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 import Link from 'next/link';
-import Image from "next/image";
 import { RiMenu2Fill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -129,14 +129,18 @@ const HomePage = () => {
       <div className='px-5 py-6 md:flex md:items-center md:justify-center md:py-0'>
         <div className='hero-section mx-auto flex w-full max-w-5xl flex-col gap-6 md:min-h-[calc(100svh-88px)] md:flex-row-reverse md:items-center md:justify-center md:gap-6'>
           <div className='w-full md:w-1/2 md:pl-6'>
-            <div className='relative h-[40svh] min-h-[260px] w-full overflow-hidden border border-[var(--border-soft)] md:h-[50svh] md:min-h-0'>
+            <div className='portrait-stage relative mx-auto h-[48svh] min-h-[360px] w-full max-w-[430px] md:h-[64svh] md:min-h-[520px]'>
+              <div className='portrait-shape portrait-shape-panel' />
+              <div className='portrait-shape portrait-shape-frame' />
+              <div className='portrait-shape portrait-shape-shadow-card' />
+              <div className='portrait-shape portrait-shape-line' />
               <Image
-                className='object-cover object-center transition duration-500 md:hover:scale-105'
-                src='/assets/images/icon.webp'
-                alt='Portrait of Tamang Nischal'
+                src='/assets/images/nischal2.png'
+                alt='Portrait of Nischal Tamang'
                 fill
                 priority
-                sizes='(min-width: 768px) 45vw, 100vw'
+                sizes='(min-width: 768px) 430px, 92vw'
+                className='hero-portrait relative z-10 scale-[0.88] object-contain object-bottom'
               />
             </div>
           </div>

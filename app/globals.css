@@ -14,6 +14,13 @@
     --border-medium: rgba(255, 255, 255, 0.35);
     --overlay: rgba(44, 44, 44, 0.95);
     --accent: #0C8CE9;
+    --portrait-panel: rgba(255, 255, 255, 0.07);
+    --portrait-panel-soft: rgba(255, 255, 255, 0.035);
+    --portrait-panel-edge: rgba(255, 255, 255, 0.17);
+    --portrait-line: rgba(255, 255, 255, 0.34);
+    --portrait-floor: rgba(0, 0, 0, 0.36);
+    --portrait-filter:
+        drop-shadow(0 32px 34px rgba(0, 0, 0, 0.44));
     --scene-sky: #26323B;
     --scene-glow: rgba(223, 164, 74, 0.26);
     --scene-sun: #DFA44A;
@@ -34,6 +41,13 @@
     --border-soft: rgba(18, 24, 38, 0.14);
     --border-medium: rgba(18, 24, 38, 0.28);
     --overlay: rgba(244, 247, 250, 0.95);
+    --portrait-panel: rgba(255, 255, 255, 0.78);
+    --portrait-panel-soft: rgba(18, 24, 38, 0.045);
+    --portrait-panel-edge: rgba(18, 24, 38, 0.12);
+    --portrait-line: rgba(18, 24, 38, 0.26);
+    --portrait-floor: rgba(18, 24, 38, 0.20);
+    --portrait-filter:
+        drop-shadow(0 30px 32px rgba(18, 24, 38, 0.20));
     --scene-sky: #DDEAF0;
     --scene-glow: rgba(223, 164, 74, 0.34);
     --scene-sun: #C7832E;
@@ -65,6 +79,73 @@ body {
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.portrait-stage {
+    isolation: isolate;
+}
+
+.portrait-stage::after,
+.portrait-shape {
+    position: absolute;
+    pointer-events: none;
+}
+
+.portrait-stage::after {
+    content: "";
+    left: 8%;
+    right: 8%;
+    bottom: 3%;
+    height: 16%;
+    background: radial-gradient(ellipse at center, var(--portrait-floor) 0%, transparent 70%);
+    transform: perspective(400px) rotateX(62deg);
+    transform-origin: center bottom;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.portrait-shape {
+    z-index: 0;
+}
+
+.portrait-shape-panel {
+    inset: 13% 12% 8% 12%;
+    background: linear-gradient(180deg, var(--portrait-panel), var(--portrait-panel-soft));
+    border: 1px solid var(--portrait-panel-edge);
+    border-radius: 4px;
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.portrait-shape-frame {
+    left: 18%;
+    top: 8%;
+    width: 62%;
+    height: 76%;
+    border: 1px solid var(--portrait-panel-edge);
+    transform: translate(10px, -8px);
+}
+
+.portrait-shape-shadow-card {
+    left: 10%;
+    top: 20%;
+    width: 66%;
+    height: 58%;
+    background: var(--portrait-panel-soft);
+    transform: translate(-12px, 14px);
+}
+
+.portrait-shape-line {
+    left: 16%;
+    right: 15%;
+    bottom: 14%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--portrait-line), transparent);
+}
+
+.hero-portrait {
+    filter: var(--portrait-filter);
 }
 
 button,
