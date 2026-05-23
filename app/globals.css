@@ -1,10 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    color-scheme: dark;
+    --surface-1: #2C2C2C;
+    --surface-2: #1E1E1E;
+    --text-primary: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.85);
+    --text-muted: rgba(255, 255, 255, 0.65);
+    --text-subtle: rgba(255, 255, 255, 0.45);
+    --border-soft: rgba(255, 255, 255, 0.15);
+    --border-medium: rgba(255, 255, 255, 0.35);
+    --overlay: rgba(44, 44, 44, 0.95);
+    --accent: #0C8CE9;
+    --scene-sky: #26323B;
+    --scene-glow: rgba(223, 164, 74, 0.26);
+    --scene-sun: #DFA44A;
+    --scene-hill: #5F8F68;
+    --scene-hill-soft: rgba(95, 143, 104, 0.32);
+    --scene-water: rgba(12, 140, 233, 0.14);
+    --scene-paper: rgba(255, 255, 255, 0.07);
+}
 
-*{
+:root[data-theme="light"] {
+    color-scheme: light;
+    --surface-1: #F4F7FA;
+    --surface-2: #FFFFFF;
+    --text-primary: #121826;
+    --text-secondary: rgba(18, 24, 38, 0.82);
+    --text-muted: rgba(18, 24, 38, 0.62);
+    --text-subtle: rgba(18, 24, 38, 0.45);
+    --border-soft: rgba(18, 24, 38, 0.14);
+    --border-medium: rgba(18, 24, 38, 0.28);
+    --overlay: rgba(244, 247, 250, 0.95);
+    --scene-sky: #DDEAF0;
+    --scene-glow: rgba(223, 164, 74, 0.34);
+    --scene-sun: #C7832E;
+    --scene-hill: #6E9B72;
+    --scene-hill-soft: rgba(110, 155, 114, 0.28);
+    --scene-water: rgba(12, 140, 233, 0.11);
+    --scene-paper: rgba(255, 255, 255, 0.52);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
     @apply font-space_grotesk;
+    margin: 0;
+    min-width: 320px;
+    background: var(--surface-2);
+    color: var(--text-primary);
+    font-synthesis: none;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }

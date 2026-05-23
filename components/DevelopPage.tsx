@@ -12,29 +12,31 @@ const DevelopPage = () => {
       intro: 'Fully responsive and functional full stack system built on top of MERN stack.',
       outro: 'System allowing users to gain recommendation of consultancies all over Nepal as well as compare the desired institutions to find the one best fit for them.',
       link: 'https://github.com/Nischal957905/Recomendation_Comparison_System',
+      tags: ['MERN', 'Recommendation', 'Full Stack'],
     },
     {
       image: '/assets/images/dev2.webp',
       title: 'Washing Center Website',
       intro: 'Fully responsive and functional full stack system built on top of NEXT.js.',
       outro: 'Front-end as well as backend design for the owners of washing center to relay their services and stories to their customers, and a mean for them to attract new customers.',
-      link: 'https://aanand-washing-center.vercel.app/'
+      link: 'https://aanand-washing-center.vercel.app/',
+      tags: ['Next.js', 'Business Site', 'Responsive'],
     }
   ]
 
   return (
-    <div className="bg-[#2C2C2C] text-[#FFFFFF] pr-5 pl-5 sm:h-[100svh]">
-      <h1 className="text-center text-[26px] 2xl:text-[48px] font-semibold pt-6 pb-6 sm:h-[18svh] m:pt-0 sm:pb-0 sm:flex sm:items-center sm:justify-center">Some of My Works</h1>
-      <div className='sm:flex sm:justify-center sm:items-center  2xl:justify-start  sm:h-[82svh] sm:flex-col'>
-        <div className='sm:grid sm:grid-cols-2 sm:w-[60svw] sm:border-t-[1px]'>
-          <div className='sm:border-r-[1px] sm:pt-5 sm:pr-5'>
-            <WorkCard pictureSource={developData[0].image} title={developData[0].title} introduction={developData[0].intro} conclusion={developData[0].outro} stack={<FaNodeJs/>} link={developData[0].link} purpose={true}/>
+    <div id="developments" className="bg-[var(--surface-2)] px-5 py-10 text-[var(--text-primary)] md:py-14 2xl:py-20">
+      <h1 className="pb-8 text-center text-[26px] font-semibold md:text-[32px] 2xl:text-[48px]">Some of My Works</h1>
+      <div className='mx-auto w-full max-w-5xl'>
+        <div className='grid gap-6 border-t border-[var(--border-soft)] pt-5 md:grid-cols-2 md:gap-0'>
+          <div className='md:border-r md:border-[var(--border-soft)] md:pr-5'>
+            <WorkCard pictureSource={developData[0].image} title={developData[0].title} introduction={developData[0].intro} conclusion={developData[0].outro} stack={<FaNodeJs/>} link={developData[0].link} purpose={true} tags={developData[0].tags}/>
           </div>
-          <div className='sm:pt-5 sm:pl-5'>
-            <WorkCard pictureSource={developData[1].image} title={developData[1].title} introduction={developData[1].intro} conclusion={developData[1].outro} stack={<SiNextdotjs/>} link={developData[0].link} purpose={true}/>
+          <div className='md:pl-5'>
+            <WorkCard pictureSource={developData[1].image} title={developData[1].title} introduction={developData[1].intro} conclusion={developData[1].outro} stack={<SiNextdotjs/>} link={developData[1].link} purpose={true} tags={developData[1].tags}/>
           </div>
         </div>      
-        <div className='text-end sm:w-full sm:pt-5 pb-5'><Link href='https://github.com/Nischal957905' target='_blank' className='text-end text-[#0C8CE9] 2xl:text-[20px]'>|More on Github|</Link></div>
+        <div className='pt-5 text-end'><Link href='https://github.com/Nischal957905' target='_blank' rel='noopener noreferrer' className='text-[var(--accent)] 2xl:text-[20px]'>|More on Github|</Link></div>
       </div>
     </div>
   )

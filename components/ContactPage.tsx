@@ -1,27 +1,38 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
-    <div className='bg-[#2C2C2C] text-[#FFFFFF] h-[100svh] pr-5 pl-5 pt-10 sm:flex sm:justify-center sm:pt-[20svh]'>
-      <div className="sm:flex sm:flex-row-reverse sm:w-[60svw]">
-        <div className='h-[30svh] mb-2 sm:h-[50svh] sm:border-t-[1px] sm:border-l-[1px] sm:pt-4 sm:pl-4 2xl:w-[30svw]'>
-          <div className='h-full w-full overflow-hidden'>
-            <img className='inset-0 w-full h-full object-cover object-center hover:scale-125 transition duration-500' src='/assets/images/tele.webp' alt='' />
+    <div id='contact' className='min-h-[100svh] bg-[var(--surface-2)] px-5 py-8 text-[var(--text-primary)] md:flex md:items-center md:justify-center md:py-12'>
+      <div className="grid w-full max-w-5xl gap-6 md:grid-cols-2 md:items-center">
+        <div className='md:order-2 md:border-l md:border-t md:border-[var(--border-soft)] md:pl-5 md:pt-5'>
+          <div className='relative h-[30svh] w-full overflow-hidden md:h-[50svh]'>
+            <Image
+              className='object-cover object-center transition duration-500 hover:scale-125'
+              src='/assets/images/tele.webp'
+              alt='Contact illustration'
+              fill
+              sizes='(min-width: 768px) 45vw, 100vw'
+            />
           </div>
         </div>
-        <div className="sm:pt-10 2xl:w-[30svw]">
-          <h1 className="text-[26px]  2xl:text-[41px] font-bold pt-6 pb-4">Contact Me</h1>
-          <p className="text-[14px] 2xl:text-[22px] font-bold leading-tight pr-5 2xl:max-w-[25svw]">You can connect me through my personal email as well as other social platforms.</p>
-          <p className="text-[14px] 2xl:text-[22px] font-bold leading-tight pr-5 pt-4 pb-6">Feel free to contact me over<span className="sm:flex">the below links.</span></p>
-          <div className="flex">
-            <Link href='https://www.linkedin.com/in/nischal-tamang-072058240/' target="_blank"><FaLinkedin className="text-[26px] 2xl:text-[41px] bg-white text-[#007acc] rounded-[3px]"/></Link>
-            <div className='h-[24px] w-[28px] ml-4 2xl:h-[41px] 2xl:w-[44px]'>
-             <div className='relative h-full w-full overflow-hidden'>
-              <Link href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nischalt80@gmail.com' target="_blank"><img className='absolute inset-0 w-full h-full object-fit object-center hover:scale-125 transition duration-500' src='/assets/images/gmail.png' alt='' /></Link>
-            </div>
+        <div className="md:order-1">
+          <p className="text-[14px] font-semibold uppercase tracking-[0.18em] text-[var(--accent)] 2xl:text-[18px]">Let&apos;s connect</p>
+          <h1 className="pb-4 pt-2 text-[28px] font-bold md:text-[36px] 2xl:text-[41px]">Contact Me</h1>
+          <p className="max-w-xl text-[14px] font-bold leading-tight text-[var(--text-secondary)] 2xl:text-[22px]">Available for freelance projects, collaborations, and full-time software engineering roles.</p>
+          <p className="max-w-xl pb-6 pt-4 text-[14px] font-bold leading-tight text-[var(--text-muted)] 2xl:text-[22px]">Send a message or connect through one of the platforms below.</p>
+          <div className="flex flex-wrap gap-3">
+            <Link href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nischalt80@gmail.com' target="_blank" rel="noopener noreferrer" className="border border-[var(--accent)] bg-[var(--accent)] px-4 py-2 text-[14px] font-bold text-white transition hover:bg-transparent hover:text-[var(--accent)]">
+              Email Me
+            </Link>
+            <Link href='https://www.linkedin.com/in/nischal-tamang-072058240/' target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border border-[var(--border-soft)] px-4 py-2 text-[14px] font-bold transition hover:border-[var(--accent)] hover:text-[var(--accent)]">
+              <FaLinkedin /> LinkedIn
+            </Link>
+            <Link href='https://github.com/Nischal957905' target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border border-[var(--border-soft)] px-4 py-2 text-[14px] font-bold transition hover:border-[var(--accent)] hover:text-[var(--accent)]">
+              <FaGithub /> GitHub
+            </Link>
           </div>
-        </div>
         </div>
       </div>
     </div>
